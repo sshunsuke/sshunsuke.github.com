@@ -1,0 +1,44 @@
+---
+title: "Top Page"
+author: "Shunsuke"
+date: '`r format(Sys.time(), "%y/%m/%d %H:%M")`'
+output:
+  html_document:
+    code_folding: hide
+    highlight: zenburn
+    number_section: no
+    theme: spacelab
+    toc: no
+    toc_float:
+      collapsed: no
+      smooth_scroll: no
+---
+
+<style type="text/css">
+
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, prompt=TRUE, comment="#")
+#setwd("..")
+```
+
+----
+
+# コンテンツ
+
+## すごい航空写真
+
+空から見た時に面白い風景になっている場所を集めたマイマップ。今思うと、タイトルは衛星写真とすべきだった。
+
+* https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing
+
+もう少し詳しい説明は、別のページにまとめた。
+
+
+## R言語関係
+
+### Skin of Earth
+
+* <>
+

@@ -1,0 +1,32 @@
+---
+title: "Satellite Photo"
+author: "Shunsuke"
+date: "09/05/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+----
+
+# 概要
+
+空から見た時に面白い風景になっている場所を集めたマイマップ。
+
+* https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing
+
+
+## マップの見方
+
+* 表示を「衛星写真」に切り替える
+* マイマップのUIがいまいちで、ピンの位置に移動し、手動でズームを調整する必要がある
+
+
+## その他
+
+* マップデータは "KMLをダウンロード" から可能
+* 二次利用に関しては、公開の際にこのマップのリンクさえ入れてもらえればご自由に (MITライセンス的な感じで)
+
+
