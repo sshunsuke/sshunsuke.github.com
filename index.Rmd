@@ -4,7 +4,7 @@ author: "Shunsuke"
 date: '`r format(Sys.time(), "%y/%m/%d %H:%M")`'
 output:
   html_document:
-    code_folding: hide
+    code_folding: none
     highlight: zenburn
     number_section: no
     theme: spacelab
@@ -12,6 +12,7 @@ output:
     toc_float:
       collapsed: no
       smooth_scroll: no
+    mathjax: null
 ---
 
 <style type="text/css">
@@ -31,10 +32,13 @@ knitr::opts_chunk$set(echo = TRUE, prompt=TRUE, comment="#")
 
 空から見た時に面白い風景になっている場所を集めたマイマップ。今思うと、タイトルは衛星写真とすべきだった。
 
-* https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing
+* [Google Maps で見る](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing)
 
 もう少し詳しい説明は、別のページにまとめた。
 
+* [すごい航空写真について](satellite.html)
+
+<iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480"></iframe>
 
 ## R言語関係
 

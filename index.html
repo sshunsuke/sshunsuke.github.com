@@ -213,66 +213,6 @@ window.buildTabsets = function(tocID) {
 };
 
 </script>
-<script>
-window.initializeCodeFolding = function(show) {
-
-  // handlers for show-all and hide all
-  $("#rmd-show-all-code").click(function() {
-    $('div.r-code-collapse').each(function() {
-      $(this).collapse('show');
-    });
-  });
-  $("#rmd-hide-all-code").click(function() {
-    $('div.r-code-collapse').each(function() {
-      $(this).collapse('hide');
-    });
-  });
-
-  // index for unique code element ids
-  var currentIndex = 1;
-
-  // select all R code blocks
-  var rCodeBlocks = $('pre.r, pre.python, pre.bash, pre.sql, pre.cpp, pre.stan, pre.julia');
-  rCodeBlocks.each(function() {
-
-    // create a collapsable div to wrap the code in
-    var div = $('<div class="collapse r-code-collapse"></div>');
-    if (show || $(this)[0].classList.contains('fold-show'))
-      div.addClass('in');
-    var id = 'rcode-643E0F36' + currentIndex++;
-    div.attr('id', id);
-    $(this).before(div);
-    $(this).detach().appendTo(div);
-
-    // add a show code button right above
-    var showCodeText = $('<span>' + (show ? 'Hide' : 'Code') + '</span>');
-    var showCodeButton = $('<button type="button" class="btn btn-default btn-xs code-folding-btn pull-right"></button>');
-    showCodeButton.append(showCodeText);
-    showCodeButton
-        .attr('data-toggle', 'collapse')
-        .attr('data-target', '#' + id)
-        .attr('aria-expanded', show)
-        .attr('aria-controls', id);
-
-    var buttonRow = $('<div class="row"></div>');
-    var buttonCol = $('<div class="col-md-12"></div>');
-
-    buttonCol.append(showCodeButton);
-    buttonRow.append(buttonCol);
-
-    div.before(buttonRow);
-
-    // update state of button on show/hide
-    div.on('hidden.bs.collapse', function () {
-      showCodeText.text('Code');
-    });
-    div.on('show.bs.collapse', function () {
-      showCodeText.text('Hide');
-    });
-  });
-
-}
-</script>
 
 
 
@@ -394,9 +334,6 @@ summary {
 </style>
 
 <!-- code folding -->
-<style type="text/css">
-.code-folding-btn { margin-bottom: 4px; }
-</style>
 
 
 
@@ -413,19 +350,11 @@ summary {
 
 <div class="fluid-row" id="header">
 
-<div class="btn-group pull-right">
-<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-<ul class="dropdown-menu" style="min-width: 50px;">
-<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
-<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
-</ul>
-</div>
-
 
 
 <h1 class="title toc-ignore">Top Page</h1>
 <h4 class="author">Shunsuke</h4>
-<h4 class="date">20/05/09 14:14</h4>
+<h4 class="date">20/05/24 22:23</h4>
 
 </div>
 
@@ -440,9 +369,14 @@ summary {
 <h2>すごい航空写真</h2>
 <p>空から見た時に面白い風景になっている場所を集めたマイマップ。今思うと、タイトルは衛星写真とすべきだった。</p>
 <ul>
-<li><a href="https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&amp;usp=sharing" class="uri">https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&amp;usp=sharing</a></li>
+<li><a href="https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&amp;usp=sharing">Google Maps で見る</a></li>
 </ul>
 <p>もう少し詳しい説明は、別のページにまとめた。</p>
+<ul>
+<li><a href="satellite.html">すごい航空写真について</a></li>
+</ul>
+<iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480">
+</iframe>
 </div>
 <div id="r言語関係" class="section level2">
 <h2>R言語関係</h2>
@@ -488,11 +422,6 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
-<script>
-$(document).ready(function () {
-  window.initializeCodeFolding("hide" === "show");
-});
-</script>
 
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
@@ -500,7 +429,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "none";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
