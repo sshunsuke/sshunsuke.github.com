@@ -1,6 +1,5 @@
 ---
-title: "Satellite Photo"
-author: "Shunsuke"
+title: "すごい航空写真"
 date: '`r format(Sys.time(), "%y/%m/%d %H:%M")`'
 output: 
   html_document:
@@ -11,24 +10,28 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+[トップへ戻る](index.html)
+
 ----
 
-# 概要
+空から見た時に面白い風景になっている場所を集めた(Google Maps の)マイマップ。今思うと、タイトルは衛星写真とすべきだった。
+ 
 
-空から見た時に面白い風景になっている場所を集めたマイマップ。
-
-* [すごい航空写真](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing)
-
-
-## マップの見方
+**マップの見方**
 
 * 表示を「衛星写真」に切り替える
-* マイマップのUIがいまいちで、ピンの位置に移動し、手動でズームを調整する必要がある
+* (マイマップのUIがいまいちなので) ピンの位置に移動し、手動でズームを調整する必要がある
 
 
-## その他
+このページにも埋め込んでおくが、[Google Maps で見た方がよいと思う](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing)。
 
-* 二次利用に関しては、公開の際にこのマップのリンクさえ入れてもらえればご自由に (MITライセンス的な感じで)
+<iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480"></iframe>
+
+**その他**
+
+* 二次利用に関しては、公開の際にこのマップのリンクさえ入れてもらえればご自由に
+  * MITライセンス的な感じで
 * マップデータは "KMLをダウンロード" から可能
-
-
+* 古いkmlデータ
+  * [20191027](satellite/kml/SugoiKoukuShashin_20191027.kml)
