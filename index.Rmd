@@ -12,6 +12,8 @@ output:
     toc_float:
       collapsed: no
       smooth_scroll: no
+    self_contained: false
+    lib_dir: libs
     mathjax: null
 ---
 
@@ -28,16 +30,12 @@ knitr::opts_chunk$set(echo = TRUE, prompt=TRUE, comment="#")
 
 # コンテンツ
 
-## すごい航空写真
-
-空から見た時に面白い風景になっている場所を集めたマイマップ。地図上のいずれかのピンにズームインすれば、タイトルの意味は分かると思う (
-[Google Maps で見る](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing))。
-
-もう少し詳しい説明は、別のページにまとめた。
-
 * [すごい航空写真について](satellite.html)
+  * 空から見た時に面白い風景になっている場所を集めたマイマップ。
+  * 地図上のいずれかのピンにズームインすれば、タイトルの意味は分かると思う
+* [パラパラマンガ](cutoffAnime.html)
+  * ちょろいJavaScriptで動かす、ぱらぱらマンガ
 
-<iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480"></iframe>
 
 ## R言語関係
 

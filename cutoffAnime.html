@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Shunsuke" />
+
+
+<title>パラパラマンガ</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">パラパラマンガ</h1>
+<h4 class="author">Shunsuke</h4>
+<h4 class="date">20/08/16 23:02</h4>
+
+</div>
+
+
+<script type="text/javascript">
+    <!--
+    var timer;
+    var rate = 200;         // レート (msec)
+    var frameNum = 71;
+    
+    function startMovie(){
+        document.location.replace("#start");
+        callback(1);
+    }
+    
+    function callback(num){
+        window.scrollBy(0, 250);
+        
+        if (num < frameNum){
+            num++;
+            timer = setTimeout("callback(" + num + ")", rate);
+        }
+    }
+    -->
+</script>
+<style type="text/css">
+.content_box {
+  text-align: center;
+}
+
+/* Film layout */
+#film  {
+    background: url(./cutoffAnime/film.gif) repeat-y center top;
+}
+</style>
+<hr />
+<p><a href="index.html">トップへ戻る</a></p>
+<hr />
+<p>ちょろいJavaScriptで動かす、ぱらぱらマンガ。</p>
+<div class="index">
+<p><span class="marker">・</span> <span class="title"> <a href="javascript:startMovie()">再生</a> </span></p>
+</div>
+<div id="film" class="content_box">
+<div id="start">
+<p><img src="cutoffAnime/pad.gif" alt="padding" width="320" height="20" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_01.jpg" alt="fimg_01" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_02.jpg" alt="fimg_02" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_03.jpg" alt="fimg_03" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_04.jpg" alt="fimg" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_05.jpg" alt="fimg_05" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_06.jpg" alt="fimg_06" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_07.jpg" alt="fimg_07" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_08.jpg" alt="fimg_08" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_09.jpg" alt="fimg_09" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_10.jpg" alt="fimg_10" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_11.jpg" alt="fimg_11" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_12.jpg" alt="fimg_12" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_13.jpg" alt="fimg_13" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_14.jpg" alt="fimg_14" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_15.jpg" alt="fimg_15" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_16.jpg" alt="fimg_16" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_17.jpg" alt="fimg_17" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_18.jpg" alt="fimg_18" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_19.jpg" alt="fimg_19" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_20.jpg" alt="fimg_20" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_21.jpg" alt="fimg_21" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_22.jpg" alt="fimg_22" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_23.jpg" alt="fimg_23" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_24.jpg" alt="fimg_24" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_25.jpg" alt="fimg_25" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_26.jpg" alt="fimg_26" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_27.jpg" alt="fimg_27" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_28.jpg" alt="fimg_28" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_29.jpg" alt="fimg_29" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_30.jpg" alt="fimg_30" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_31.jpg" alt="fimg_31" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_32.jpg" alt="fimg_32" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_33.jpg" alt="fimg_33" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_34.jpg" alt="fimg_34" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_35.jpg" alt="fimg_35" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_36.jpg" alt="fimg_36" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_37.jpg" alt="fimg_37" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_38.jpg" alt="fimg_38" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_39.jpg" alt="fimg_39" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_40.jpg" alt="fimg_40" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_41.jpg" alt="fimg_41" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_42.jpg" alt="fimg_42" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_43.jpg" alt="fimg_43" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_44.jpg" alt="fimg_44" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_45.jpg" alt="fimg_45" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_46.jpg" alt="fimg_46" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_47.jpg" alt="fimg_47" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_48.jpg" alt="fimg_48" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_49.jpg" alt="fimg_49" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_50.jpg" alt="fimg_50" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_51.jpg" alt="fimg_51" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_52.jpg" alt="fimg_52" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_53.jpg" alt="fimg_53" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_54.jpg" alt="fimg_54" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_55.jpg" alt="fimg_55" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_56.jpg" alt="fimg_56" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_57.jpg" alt="fimg_57" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_58.jpg" alt="fimg_58" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_59.jpg" alt="fimg_59" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_60.jpg" alt="fimg_60" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_61.jpg" alt="fimg_61" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_62.jpg" alt="fimg_62" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_63.jpg" alt="fimg_63" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_64.jpg" alt="fimg_64" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_65.jpg" alt="fimg_65" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_66.jpg" alt="fimg_66" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_67.jpg" alt="fimg_67" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_68.jpg" alt="fimg_68" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_69.jpg" alt="fimg_69" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_70.jpg" alt="fimg_70" width="320" height="240" /></p>
+</div>
+<div class="frame">
+<p><img src="cutoffAnime/pic_71.jpg" alt="fimg_71" width="320" height="240" /></p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

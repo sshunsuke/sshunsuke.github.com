@@ -4,6 +4,8 @@ date: '`r format(Sys.time(), "%y/%m/%d %H:%M")`'
 output: 
   html_document:
     mathjax: null
+    self_contained: false
+    lib_dir: libs
 ---
 
 ```{r setup, include=FALSE}
