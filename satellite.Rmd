@@ -28,10 +28,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480"></iframe>
 
-**その他**
+----
 
-* 二次利用に関しては、公開の際にこのマップのリンクさえ入れてもらえればご自由に
-  * MITライセンス的な感じで
-* マップデータは "KMLをダウンロード" から可能
-* 古いkmlデータ
+**二次利用について**
+
+* 二次利用に関しては、公開の際にマップの以下のリンクさえ入れてもらえればご自由に (MITライセンス的な感じで)
+  * https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing
+  * もしくは、http://sshunsuke.github.io/satellite.html
+* マップデータは [Google Maps の UI](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing) の "KMLをダウンロード" から可能
+* 古いkmlデータについては、ここにおいておく
   * [20191027](satellite/kml/SugoiKoukuShashin_20191027.kml)
+
+
+
