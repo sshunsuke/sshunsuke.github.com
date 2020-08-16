@@ -17,8 +17,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ----
 
-空から見た時に面白い風景になっている場所を集めた(Google Maps の)マイマップ。今思うと、タイトルは衛星写真とすべきだった。
- 
+空から見た時に面白い風景になっている場所を集めた(Google Maps の)マイマップ。
+
+* このページにも埋め込んだけど、[Google Maps で見た方がよいと思う](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing)。
+
+----
 
 **マップの見方**
 
@@ -26,7 +29,6 @@ knitr::opts_chunk$set(echo = TRUE)
 * (マイマップのUIがいまいちなので) ピンの位置に移動し、手動でズームを調整する必要がある
 
 
-このページにも埋め込んでおくが、[Google Maps で見た方がよいと思う](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing)。
 
 <iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480"></iframe>
 

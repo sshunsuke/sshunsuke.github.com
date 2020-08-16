@@ -162,7 +162,7 @@ summary {
 
 <h1 class="title toc-ignore">パラパラマンガ</h1>
 <h4 class="author">Shunsuke</h4>
-<h4 class="date">20/08/16 23:02</h4>
+<h4 class="date">20/08/17 00:04</h4>
 
 </div>
 
@@ -179,7 +179,11 @@ summary {
     }
     
     function callback(num){
+      if (window.innerWidth < 420) {
+        window.scrollBy(0, 190);
+      } else {
         window.scrollBy(0, 250);
+      }
         
         if (num < frameNum){
             num++;
@@ -189,20 +193,31 @@ summary {
     -->
 </script>
 <style type="text/css">
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+#film  {
+    background: url(./cutoffAnime/film.gif) repeat-y center top;
+}
+
+@media (max-width: 420px) {
+  #film .frame img { width: 240px; height: 180px }
+  #film {
+      background: url(./cutoffAnime/film_s.gif) repeat-y center top;
+  }
+}
+
 .content_box {
   text-align: center;
 }
 
-/* Film layout */
-#film  {
-    background: url(./cutoffAnime/film.gif) repeat-y center top;
-}
 </style>
 <hr />
 <p><a href="index.html">トップへ戻る</a></p>
 <hr />
 <p>ちょろいJavaScriptで動かす、ぱらぱらマンガ。</p>
-<div class="index">
+<div id="top" class="index">
 <p><span class="marker">・</span> <span class="title"> <a href="javascript:startMovie()">再生</a> </span></p>
 </div>
 <div id="film" class="content_box">
@@ -422,6 +437,10 @@ summary {
 <div class="frame">
 <p><img src="cutoffAnime/pic_71.jpg" alt="fimg_71" width="320" height="240" /></p>
 </div>
+</div>
+<hr />
+<div id="to_top">
+<p><a href="#top"><span class="mark">▲</span> 上に戻る</a></p>
 </div>
 
 

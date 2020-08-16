@@ -29,7 +29,11 @@ output:
 	}
 	
 	function callback(num){
-		window.scrollBy(0, 250);
+	  if (window.innerWidth < 420) {
+	    window.scrollBy(0, 190);
+	  } else {
+	    window.scrollBy(0, 250);
+	  }
 		
 		if (num < frameNum){
 			num++;
@@ -40,14 +44,25 @@ output:
 </script>
 
 <style type="text/css">
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+#film  {
+	background: url(./cutoffAnime/film.gif) repeat-y center top;
+}
+
+@media (max-width: 420px) {
+  #film .frame img { width: 240px; height: 180px }
+  #film {
+	  background: url(./cutoffAnime/film_s.gif) repeat-y center top;
+  }
+}
+
 .content_box {
   text-align: center;
 }
 
-/* Film layout */
-#film  {
-	background: url(./cutoffAnime/film.gif) repeat-y center top;
-}
 </style>
 
 ```{r setup, include=FALSE}
@@ -63,7 +78,7 @@ knitr::opts_chunk$set(echo = TRUE, prompt=TRUE, comment="#")
 
 ちょろいJavaScriptで動かす、ぱらぱらマンガ。 
 
-<div class="index">
+<div class="index" id="top">
 <span class="marker">・</span>
 <span class="title">
 <a href="javascript:startMovie()">再生</a>
@@ -290,4 +305,10 @@ knitr::opts_chunk$set(echo = TRUE, prompt=TRUE, comment="#")
 <div class="frame">
 <img src="cutoffAnime/pic_71.jpg" alt="fimg_71" width="320" height="240" />
 </div>
+</div>
+
+----
+
+<div id="to_top">
+<a href="#top"><span class="mark">▲</span>&nbsp;上に戻る</a>
 </div>
