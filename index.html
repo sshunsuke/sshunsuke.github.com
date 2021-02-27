@@ -21,6 +21,17 @@
 <script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="libs/navigation-1.1/tabsets.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
@@ -162,7 +173,7 @@ summary {
 
 <h1 class="title toc-ignore">Top Page</h1>
 <h4 class="author">Shunsuke</h4>
-<h4 class="date">20/08/16 23:00</h4>
+<h4 class="date">21/02/27 17:25</h4>
 
 </div>
 
@@ -171,27 +182,22 @@ summary {
 
 </style>
 <hr />
-<div id="コンテンツ" class="section level1">
-<h1>コンテンツ</h1>
+<div id="small-works-in-sandbox" class="section level1">
+<h1>Small Works in Sandbox</h1>
+<div id="衛星写真-on-google-maps" class="section level2">
+<h2>衛星写真 on Google Maps</h2>
 <ul>
-<li><a href="satellite.html">すごい航空写真について</a>
+<li><a href="https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&amp;usp=sharing">すごい航空写真</a>
 <ul>
-<li>空から見た時に面白い風景になっている場所を集めたマイマップ。</li>
-<li>地図上のいずれかのピンにズームインすれば、タイトルの意味は分かると思う</li>
+<li><a href="satellite.html">説明とか</a></li>
 </ul></li>
-<li><a href="cutoffAnime.html">パラパラマンガ</a>
-<ul>
-<li>ちょろいJavaScriptで動かす、ぱらぱらマンガ</li>
-</ul></li>
-</ul>
-<div id="r言語関係" class="section level2">
-<h2>R言語関係</h2>
-<div id="skin-of-earth" class="section level3">
-<h3>Skin of Earth</h3>
-<ul>
-<li>&lt;&gt;</li>
 </ul>
 </div>
+<div id="パラパラマンガ" class="section level2">
+<h2>パラパラマンガ</h2>
+<ul>
+<li><a href="cutoffAnime.html">フィルム風</a></li>
+</ul>
 </div>
 </div>
 
@@ -204,7 +210,7 @@ summary {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

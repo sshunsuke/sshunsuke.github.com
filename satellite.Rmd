@@ -17,20 +17,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ----
 
-空から見た時に面白い風景になっている場所を集めた(Google Maps の)マイマップ。
+面白い航空写真を集めた(Google Mapsの)マイマップ。
 
-* このページにも埋め込んだけど、[Google Maps で見た方がよいと思う](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing)。
-
-----
+* [すごい航空写真](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing)
 
 **マップの見方**
 
+* パソコンでしか見られないかも
 * 表示を「衛星写真」に切り替える
 * (マイマップのUIがいまいちなので) ピンの位置に移動し、手動でズームを調整する必要がある
 
-
-
-<iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480"></iframe>
 
 ----
 
@@ -44,4 +40,12 @@ knitr::opts_chunk$set(echo = TRUE)
   * [20191027](satellite/kml/SugoiKoukuShashin_20191027.kml)
 
 
+----
 
+**ページへの埋め込み**
+
+* マップを埋め込んで使用する場合も、以下のマップへのリンクを入れてください
+  * https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing
+
+
+<iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480"></iframe>

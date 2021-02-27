@@ -22,6 +22,17 @@
 <script src="libs/navigation-1.1/tabsets.js"></script>
 <link href="libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -177,25 +188,23 @@ summary {
 
 
 <h1 class="title toc-ignore">すごい航空写真</h1>
-<h4 class="date">20/08/16 23:13</h4>
+<h4 class="date">21/02/27 14:06</h4>
 
 </div>
 
 
 <p><a href="index.html">トップへ戻る</a></p>
 <hr />
-<p>空から見た時に面白い風景になっている場所を集めた(Google Maps の)マイマップ。</p>
+<p>面白い航空写真を集めた(Google Mapsの)マイマップ。</p>
 <ul>
-<li>このページにも埋め込んだけど、<a href="https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&amp;usp=sharing">Google Maps で見た方がよいと思う</a>。</li>
+<li><a href="https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&amp;usp=sharing">すごい航空写真</a>。</li>
 </ul>
-<hr />
 <p><strong>マップの見方</strong></p>
 <ul>
+<li>たぶんパソコンでしか見られない</li>
 <li>表示を「衛星写真」に切り替える</li>
 <li>(マイマップのUIがいまいちなので) ピンの位置に移動し、手動でズームを調整する必要がある</li>
 </ul>
-<iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480">
-</iframe>
 <hr />
 <p><strong>二次利用について</strong></p>
 <ul>
@@ -210,6 +219,16 @@ summary {
 <li><a href="satellite/kml/SugoiKoukuShashin_20191027.kml">20191027</a></li>
 </ul></li>
 </ul>
+<hr />
+<p><strong>ページへの埋め込み</strong></p>
+<ul>
+<li>マップを埋め込んで使用する場合も、マップへのリンクを入れてください
+<ul>
+<li><a href="https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&amp;usp=sharing" class="uri">https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&amp;usp=sharing</a></li>
+</ul></li>
+</ul>
+<iframe src="https://www.google.com/maps/d/embed?mid=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ" width="960" height="480">
+</iframe>
 
 
 
@@ -220,7 +239,7 @@ summary {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();

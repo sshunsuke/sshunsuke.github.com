@@ -28,18 +28,17 @@ knitr::opts_chunk$set(echo = TRUE, prompt=TRUE, comment="#")
 
 ----
 
-# コンテンツ
 
-* [すごい航空写真について](satellite.html)
-  * 空から見た時に面白い風景になっている場所を集めたマイマップ。
-  * 地図上のいずれかのピンにズームインすれば、タイトルの意味は分かると思う
-* [パラパラマンガ](cutoffAnime.html)
-  * ちょろいJavaScriptで動かす、ぱらぱらマンガ
+# Small Works in Sandbox
+
+## 衛星写真 on Google Maps
+
+* [すごい航空写真](https://drive.google.com/open?id=112NBkXIZ6lJS3O_8vHT7ZFmnNjQ&usp=sharing)
+  * [説明とか](satellite.html)
 
 
-## R言語関係
+## パラパラマンガ
 
-### Skin of Earth
+* [フィルム風](cutoffAnime.html)
 
-* <>
 
