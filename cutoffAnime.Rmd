@@ -57,6 +57,7 @@ body {
   #film {
 	  background: url(./cutoffAnime/film_s.gif) repeat-y center top;
   }
+  
 }
 
 .content_box {
@@ -76,12 +77,12 @@ knitr::opts_chunk$set(echo = TRUE, prompt=TRUE, comment="#")
 
 ----
 
-ちょろいJavaScriptで動かす、ぱらぱらマンガ。 
+Very short animation with a filmstrip.
 
 <div class="index" id="top">
 <span class="marker">・</span>
 <span class="title">
-<a href="javascript:startMovie()">再生</a>
+<a href="javascript:startMovie()">Play</a>
 </span>
 </div>
 
